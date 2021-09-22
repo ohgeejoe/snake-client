@@ -14,7 +14,7 @@ const setupInput = function(conn) {
 const handleUserInput = function(key) {
   // // const stdin = process.stdin;
   // stdin.on('data', (key) => {
-  if (key === '\u0003') { // for the crt c exit. have to press twice dont know why.
+  if (key === '\u0003') { // for the crt c exit. have to press twice dont know why. reason was the repeated stdin. refactored.
     process.exit();
   }
   if (key === 'w') {
