@@ -12,6 +12,7 @@ const connect = function() {
 
   conn.on("connect", () => {
     conn.write("Name: JSP");
+    conn.write("Say: Hellor Rob Ford");
    
   });
   // interpret incoming data as text
