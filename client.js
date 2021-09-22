@@ -14,16 +14,10 @@ const connect = function() {
     conn.write("Name: JSP");
    
   });
-
-
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
-
   return conn;
-  
 };
-
-{connect};
   
-module.exports = {connect};
+module.exports = connect;
